@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@include mat.core();
+
+// Define your theme
+$theme: mat.define-theme((
+  color: (
+    theme-type: dark,
+    primary: mat.$blue-palette,
+  ),
+  typography: (
+    brand-family: 'monospace',
+    bold-weight: 400
+  ),
+  density: (
+    scale: -1
+  )
+));
+
+/* You can add global styles to this file, and also import other style files */
+html, body {
+  // Apply the theme
+  @include mat.all-component-themes($theme);
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: monospace, Comic Sans, sans-serif;
+}

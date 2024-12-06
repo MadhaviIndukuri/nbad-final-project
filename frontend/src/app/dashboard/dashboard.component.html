@@ -1,0 +1,13 @@
+<div class="article-container">
+  <mat-card *ngFor="let article of articles" class="article-card" (click)="navigateToSummary(article)">
+    <mat-card-header>
+      <mat-card-title>{{ article.title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ article.summary }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <a href="{{ article.url }}" target="_blank">Read more</a>
+    </mat-card-actions>
+  </mat-card>
+</div>

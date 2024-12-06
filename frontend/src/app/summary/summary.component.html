@@ -1,0 +1,9 @@
+<div *ngIf="article">
+  <h1>{{ article.title }}</h1>
+  <p>{{ article.summary }}</p>
+</div>
+<canvas baseChart
+        [data]="chartData"
+        [options]="chartOptions"
+        [type]="chartType">
+</canvas>

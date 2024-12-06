@@ -1,0 +1,29 @@
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.article-card {
+  background-color: #ffffff;
+  color: #333333;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+mat-card-title, mat-card-content, mat-card-actions {
+  color: inherit;
+}
+
+mat-card-actions a {
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+mat-card-actions a:hover {
+  text-decoration: underline;
+}
